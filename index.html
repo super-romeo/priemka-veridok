@@ -8,6 +8,10 @@
 <meta name="description" content="Для магазина или кафе: гашение ВСД в «Меркурии», приёмка УПД в «Честном знаке» и ТТН в ЕГАИС каждый день в одном окне.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -62,38 +66,68 @@
 </head>
 <body>
 
-<header><div class="wrap">
-  <div class="logo"><a href="index.html" data-ev="click_logo_home">Приёмка в госсистемах</a></div>
-  <nav class="top"><a href="#chto" data-ev="click_nav_chto">Что вы получаете</a><a href="price.html" data-ev="click_nav_cena">Цена</a><a href="#primer" data-ev="click_nav_primer">Пример</a><a href="#start" data-ev="click_nav_start">Начать</a></nav>
+<header><div class="shell">
+  <a class="home" href="index.html" data-ev="click_logo_home">Приёмка в госсистемах</a>
+  <nav><a href="#chto" data-ev="click_nav_chto">Что вы получаете</a><a href="price.html" data-ev="click_nav_cena">Цена</a><a href="#primer" data-ev="click_nav_primer">Пример</a><a href="#start" data-ev="click_nav_start">Начать</a></nav>
 </div></header>
 
-<div class="wrap">
-  <div class="hero">
-    <h1>ВСД, УПД и ТТН — в одном окне, без трёх кабинетов</h1>
-    <p class="sub">Для продуктовых магазинов и кафе до 50 человек: входящие документы из «Меркурия», «Честного знака» и ЕГАИС собраны в одном списке, принимаются по поставке в несколько нажатий, а то, что не принято в срок, видно сразу.</p>
-    <a class="cta" href="price.html" data-ev="cta_click">Мне это нужно</a> <a class="cta" href="price.html" data-ev="click_cena_hero" style="margin-left:8px">Цена</a>
-    <p class="cta-note">Сервис в подготовке · Оплата на этой странице не принимается</p>
-  </div>
+<main class="shell">
+  <section class="split">
+    <div class="stack">
+      <p class="meta rise"><span class="dot"></span> Для продуктовых магазинов и кафе</p>
+      <h1 class="rise" style="--i:1">ВСД, УПД и ТТН&nbsp;<span class="soft">— в одном окне, без трёх кабинетов</span></h1>
+      <p class="rise" style="--i:2">Для продуктовых магазинов и кафе до 50 человек: входящие документы из «Меркурия», «Честного знака» и ЕГАИС собраны в одном списке, принимаются по поставке в несколько нажатий, а то, что не принято в срок, видно сразу.</p>
+      <div class="actions rise" style="--i:3"><a class="button" href="price.html" data-ev="cta_click">Мне это нужно</a><a class="button quiet" href="price.html" data-ev="click_cena_hero">Цена</a></div>
+      <p class="meta rise" style="--i:4">Сервис в подготовке · Оплата на этой странице не принимается</p>
+    </div>
+    <figure class="window rise" style="--i:2"><svg aria-hidden="true" focusable="false" class="shot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><rect x="80" y="80" width="1040" height="640" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="130" y="165" font-size="36" font-weight="600" fill="#0a1524">ВСД, УПД и ТТН</text><line x1="120" y1="210" x2="1080" y2="210" fill="none" stroke="#dde2ea" stroke-width="3" /><rect x="140" y="260" width="64" height="64" rx="12" fill="#12397a" /><text x="230" y="302" font-size="32" fill="#0a1524">Меркурий</text><rect x="140" y="370" width="64" height="64" rx="12" fill="#dfe8f7" /><text x="230" y="412" font-size="32" fill="#0a1524">Честный знак</text><rect x="140" y="480" width="64" height="64" rx="12" fill="#dfe8f7" /><text x="230" y="522" font-size="32" fill="#0a1524">ЕГАИС</text><rect x="700" y="260" width="360" height="400" rx="20" fill="#dfe8f7" /><text x="730" y="330" font-size="32" font-weight="600" fill="#0a1524">в одном списке</text><rect x="740" y="390" width="280" height="28" rx="12" fill="#ffffff" /><rect x="740" y="450" width="200" height="28" rx="12" fill="#ffffff" /><rect x="740" y="510" width="240" height="28" rx="12" fill="#b9c3d2" /></svg></figure>
+    <dl class="facts">
+      <div><dt>Для</dt><dd>Продуктовых магазинов и кафе</dd></div>
+      <div><dt>Список</dt><dd>В одном списке</dd></div>
+      <div><dt>Как</dt><dd>Принимаются по поставке</dd></div>
+      <div><dt>Пока</dt><dd>Сервис в подготовке</dd></div>
+    </dl>
+  </section>
 
   <section id="chto" data-view="features_view">
-    <h2>Что вы получаете</h2>
-    <div class="grid">
-      <div class="card"><b>Гашение ВСД</b><span>Ветеринарные сопроводительные документы из «Меркурия» гасятся по поставке, в том числе группой.</span><br><a class="btn" href="price.html" data-ev="feature_vsd">Мне это нужно</a></div>
-      <div class="card"><b>УПД с кодами</b><span>Входящие УПД с кодами маркировки принимаются через ЭДО с проверкой кодов.</span><br><a class="btn" href="price.html" data-ev="feature_upd">Мне это нужно</a></div>
-      <div class="card"><b>ТТН в ЕГАИС</b><span>Накладные ЕГАИС на алкоголь подтверждаются или отклоняются с расхождениями.</span><br><a class="btn" href="price.html" data-ev="feature_egais">Мне это нужно</a></div>
-      <div class="card"><b>Не принято в срок</b><span>Список документов, которые ждут приёмки, с напоминанием до истечения срока.</span><br><a class="btn" href="price.html" data-ev="feature_srok">Мне это нужно</a></div>
+    <div class="stack"><h2>Что вы получаете</h2></div>
+    <div class="bento">
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="60" y="50" width="680" height="500" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="100" y="130" font-size="36" font-weight="600" fill="#0a1524">Гашение ВСД</text><rect x="110" y="180" width="560" height="90" rx="14" fill="#dfe8f7" /><text x="150" y="234" font-size="32" fill="#0a1524">по поставке</text><polyline points="560,214 578,234 610,196" fill="none" stroke="#12397a" stroke-width="5" /><rect x="110" y="290" width="560" height="90" rx="14" fill="#eef2f7" /><rect x="150" y="322" width="260" height="22" rx="10" fill="#dde2ea" /><rect x="110" y="400" width="560" height="90" rx="14" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="150" y="454" font-size="32" fill="#566174">группой</text></svg></div>
+        <h3>Гашение ВСД</h3><p>Ветеринарные сопроводительные документы из «Меркурия» гасятся по поставке, в том числе группой.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_vsd">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="60" y="50" width="680" height="500" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="100" y="130" font-size="36" font-weight="600" fill="#0a1524">УПД с кодами</text><text x="100" y="190" font-size="30" fill="#566174">через ЭДО</text><rect x="110" y="240" width="70" height="70" rx="8" fill="#dfe8f7" /><rect x="200" y="240" width="70" height="70" rx="8" fill="#dfe8f7" /><rect x="290" y="240" width="70" height="70" rx="8" fill="#12397a" /><rect x="380" y="240" width="70" height="70" rx="8" fill="#dfe8f7" /><rect x="470" y="240" width="70" height="70" rx="8" fill="#b9c3d2" /><rect x="110" y="330" width="70" height="70" rx="8" fill="#dfe8f7" /><rect x="200" y="330" width="70" height="70" rx="8" fill="#eef2f7" stroke="#dde2ea" stroke-width="3" /><rect x="290" y="330" width="70" height="70" rx="8" fill="#dfe8f7" /><rect x="380" y="330" width="70" height="70" rx="8" fill="#dfe8f7" /><rect x="470" y="330" width="70" height="70" rx="8" fill="#dde2ea" /><rect x="110" y="440" width="340" height="24" rx="12" fill="#dde2ea" /></svg></div>
+        <h3>УПД с кодами</h3><p>Входящие УПД с кодами маркировки принимаются через ЭДО с проверкой кодов.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_upd">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="60" y="50" width="680" height="500" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="100" y="130" font-size="36" font-weight="600" fill="#0a1524">ТТН в ЕГАИС</text><text x="100" y="190" font-size="30" fill="#566174">на алкоголь</text><rect x="100" y="250" width="280" height="220" rx="18" fill="#dfe8f7" /><text x="124" y="370" font-size="28" fill="#0a1524">подтверждаются</text><rect x="410" y="250" width="280" height="220" rx="18" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="434" y="370" font-size="28" fill="#566174">отклоняются</text></svg></div>
+        <h3>ТТН в ЕГАИС</h3><p>Накладные ЕГАИС на алкоголь подтверждаются или отклоняются с расхождениями.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_egais">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="60" y="50" width="680" height="500" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="100" y="130" font-size="32" font-weight="600" fill="#0a1524">Не принято в срок</text><circle cx="640" cy="160" r="48" fill="#dfe8f7" /><line x1="640" y1="160" x2="640" y2="128" fill="none" stroke="#12397a" stroke-width="4" /><line x1="640" y1="160" x2="668" y2="176" fill="none" stroke="#566174" stroke-width="4" /><rect x="100" y="200" width="420" height="64" rx="14" fill="#eef2f7" /><rect x="100" y="284" width="420" height="64" rx="14" fill="#dfe8f7" /><rect x="100" y="368" width="420" height="64" rx="14" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="100" y="490" font-size="30" fill="#566174">ждут приёмки</text></svg></div>
+        <h3>Не принято в срок</h3><p>Список документов, которые ждут приёмки, с напоминанием до истечения срока.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_srok">Мне это нужно</a>
+      </article>
     </div>
   </section>
 
-  <section id="primer" data-view="example_view">
-    <h2>Пример (вымышленные данные)</h2>
-    <p class="fine">Магазин у дома, 14 поставщиков. Утро понедельника: 23 ВСД, 6 УПД с кодами и 2 ТТН ЕГАИС в одном списке. Молочка и мясо — ВСД погашены группой, у одного УПД не хватает 4 кодов — оформлено расхождение, ТТН на пиво подтверждены. Всё за 12 минут.</p>
-    <a class="cta" href="price.html" data-ev="click_cta_after_example">Выберите тариф</a>
+  <section id="primer" data-view="example_view" class="split flip">
+    <div class="stack">
+      <h2>Пример</h2>
+      <p>Магазин у дома, 14 поставщиков. Утро понедельника: 23 ВСД, 6 УПД с кодами и 2 ТТН ЕГАИС в одном списке. Молочка и мясо — ВСД погашены группой, у одного УПД не хватает 4 кодов — оформлено расхождение, ТТН на пиво подтверждены. Всё за 12 минут.</p>
+    <a class="button" href="price.html" data-ev="click_cta_after_example">Выберите тариф</a>
+    </div>
+<svg aria-hidden="true" focusable="false" class="shot reveal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><line x1="240" y1="150" x2="960" y2="150" fill="none" stroke="#dde2ea" stroke-width="6" /><circle cx="240" cy="150" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><circle cx="600" cy="150" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><circle cx="960" cy="150" r="22" fill="#12397a" /><text x="240" y="230" font-size="34" font-weight="600" fill="#0a1524" text-anchor="middle">23 ВСД</text><text x="600" y="230" font-size="34" font-weight="600" fill="#0a1524" text-anchor="middle">6 УПД</text><text x="960" y="230" font-size="34" font-weight="600" fill="#0a1524" text-anchor="middle">2 ТТН</text><rect x="120" y="320" width="960" height="400" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="170" y="410" font-size="36" font-weight="600" fill="#0a1524">Утро понедельника</text><text x="170" y="490" font-size="32" fill="#566174">погашены группой</text><rect x="170" y="540" width="300" height="70" rx="14" fill="#dfe8f7" /><text x="196" y="584" font-size="30" fill="#0a1524">12 минут</text><rect x="500" y="555" width="360" height="28" rx="12" fill="#dde2ea" /></svg>
   </section>
 <!-- seo-tekst:start -->
-  <section id="opis">
-    <h2>Как это работает</h2>
-    <p>Небольшой продуктовый магазин или кафе каждый день принимает поставки, и почти каждая требует действия в государственной системе. Молочные и мясные продукты приходят с ветеринарными сопроводительными документами в «Меркурии», которые нужно погасить. Маркированные товары — с УПД и кодами в «Честном знаке», которые принимаются через ЭДО. Алкоголь — с ТТН в ЕГАИС, которые нужно подтвердить. Это три разных кабинета и три разных порядка действий.</p>
+  <section id="opis" class="split flip">
+    <div class="stack"><h2>Как это работает</h2></div>
+    <div class="stack">
+      <p>Небольшой продуктовый магазин или кафе каждый день принимает поставки, и почти каждая требует действия в государственной системе. Молочные и мясные продукты приходят с ветеринарными сопроводительными документами в «Меркурии», которые нужно погасить. Маркированные товары — с УПД и кодами в «Честном знаке», которые принимаются через ЭДО. Алкоголь — с ТТН в ЕГАИС, которые нужно подтвердить. Это три разных кабинета и три разных порядка действий.</p>
     <p>Пропущенный документ — нарушение порядка работы в системе, а непринятый УПД ещё и ломает остатки кодов. Владелец магазина или администратор тратит на это полчаса–час в день. Приёмка в госсистемах сводит эту работу в одно окно.</p>
     <p>Все входящие документы из трёх систем собираются в одном списке и группируются по поставкам и поставщикам. Вы видите, что пришло сегодня, что ждёт с прошлой недели и где горит срок.</p>
     <p>ВСД гасятся по поставке, в том числе группой, когда пришло много позиций от одного поставщика. Если фактическое количество отличается, расхождение оформляется в той же форме.</p>
@@ -105,31 +139,34 @@
     <p>Если администратор заболел или в отпуске, его заменяет другой сотрудник: документы в одном месте, а порядок действий тот же. Владелец видит, что всё принято, даже не заходя в магазин. Если у поставщика повторяются ошибки, это видно в отчёте, и с ним можно поговорить предметно.</p>
     <p>Для владельцев нескольких точек сервис показывает документы всех магазинов в одном списке с отбором по точке и сотрудникам.</p>
     <p>Мы не являемся оператором государственных информационных систем и не действуем от их имени. Ответственность за приёмку и сведения в системах несёт организация.</p>
+    </div>
   </section>
   <section id="faq">
-    <h2>Вопросы и ответы</h2>
-    <h3>Какие системы поддерживаются?</h3>
-    <p>«Меркурий» (ВСД), «Честный знак» (УПД с кодами через ЭДО) и ЕГАИС (ТТН).</p>
-    <h3>Можно ли гасить ВСД группой?</h3>
-    <p>Да, по поставке или по поставщику.</p>
-    <h3>Что если пришло не всё?</h3>
-    <p>Расхождение оформляется в той же форме: в ВСД, УПД или ТТН.</p>
-    <h3>Кто может работать в сервисе?</h3>
-    <p>Продавец или администратор с доверенностью, без бухгалтера.</p>
-    <h3>Можно ли пользоваться уже сейчас?</h3>
-    <p>Пока нет. Сервис в подготовке, мы проверяем, нужен ли он магазинам и кафе.</p>
+    <div class="stack"><h2>Вопросы и ответы</h2></div>
+    <div class="rows">
+      <div class="split flip"><h3>Какие системы поддерживаются?</h3><p>«Меркурий» (ВСД), «Честный знак» (УПД с кодами через ЭДО) и ЕГАИС (ТТН).</p></div>
+      <div class="split flip"><h3>Можно ли гасить ВСД группой?</h3><p>Да, по поставке или по поставщику.</p></div>
+      <div class="split flip"><h3>Что если пришло не всё?</h3><p>Расхождение оформляется в той же форме: в ВСД, УПД или ТТН.</p></div>
+      <div class="split flip"><h3>Кто может работать в сервисе?</h3><p>Продавец или администратор с доверенностью, без бухгалтера.</p></div>
+      <div class="split flip"><h3>Можно ли пользоваться уже сейчас?</h3><p>Пока нет. Сервис в подготовке, мы проверяем, нужен ли он магазинам и кафе.</p></div>
+    </div>
   </section>
 <!-- seo-tekst:end -->
-  <section id="start" data-view="start_view">
-    <h2>Подключите первую систему</h2>
-    <p><label>Тип заведения<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— выберите —</option><option>Продуктовый магазин</option><option>Кафе или ресторан</option><option>Пекарня</option><option>Другое</option></select></label></p>
-    <a class="cta" href="price.html" data-ev="form_submit_click">Подключить</a>
+  <section id="start" data-view="start_view" class="split">
+    <div class="stack">
+      <h2>Подключите первую систему</h2>
+    </div>
+    <div class="tile stack">
+      <label>Тип заведения<select data-ev-focus="form_start"><option value="">— выберите —</option><option>Продуктовый магазин</option><option>Кафе или ресторан</option><option>Пекарня</option><option>Другое</option></select></label>
+      <a class="button" href="price.html" data-ev="form_submit_click">Подключить</a>
+    </div>
   </section>
-</div>
+</main>
 
-<footer><div class="wrap">
+<footer><div class="shell">
+  <p><b>Приёмка в госсистемах</b></p>
   <p>Оператор: ИП Гудев Роман, ИНН 615007167949 &middot; <a href="privacy.html" data-ev="click_legal_privacy">Политика обработки персональных данных</a></p>
-  <p class="muted">Мы не оператор государственных информационных систем и не действуем от их имени. Ответственность за приёмку несёт организация.</p>
+  <p>Мы не оператор государственных информационных систем и не действуем от их имени. Ответственность за приёмку несёт организация.</p>
 </div></footer>
 
 </body>
